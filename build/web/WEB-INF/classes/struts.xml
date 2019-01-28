@@ -1,0 +1,100 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="login" class="com.hp.LoginData">
+            <result name="admin">/Admin.jsp</result>
+            <result name="user">/User.jsp</result>
+            <result name="doctor">/Doctor.jsp</result>
+            <result name="error">/Login.jsp</result>
+            <result name="input">/Login.jsp</result>
+        </action>
+        <action name="loginNew" class="com.hp.LoginData">
+            <result name="admin">/Admin.jsp</result>
+            <result name="user">/User.jsp</result>
+            <result name="doctor">/Doctor.jsp</result>
+            <result name="error">/LoginNew.jsp</result>
+            <result name="input">/LoginNew.jsp</result>
+        </action>
+        <action name="loginHome">
+            <result name="success">/LoginNew.jsp</result>
+        </action>
+        <action name="userHome" class="com.hp.UserHome">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userNewMsg" class="com.hp.UserNewMsg">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="newMsg" class="com.hp.NewMsgData">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userInbox" class="com.hp.UserInbox">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userAccount" class="com.hp.UserAccount">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userAccountData" class="com.hp.UserAccountData">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userUpdate" class="com.hp.UserUpdate">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="userUpdateData" class="com.hp.UserUpdateData">
+            <result name="success">/User.jsp</result>
+        </action>
+        <action name="logout" class="com.hp.Logout">
+            <result name="success">/LoginNew.jsp</result>
+        </action>
+        <action name="doctorHome" class="com.hp.DoctorHome">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="doctorNewMsg" class="com.hp.DoctorNewMsg">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="docNewMsgData" class="com.hp.DocNewMsgData">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="doctorInbox" class="com.hp.DoctorInbox">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="doctorAccount" class="com.hp.DoctorAccount">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="docAccountData" class="com.hp.DocAccountData">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="doctorUpdate" class="com.hp.DoctorUpdate">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="docUpdateData" class="com.hp.DocUpdateData">
+            <result name="success">/Doctor.jsp</result>
+        </action>
+        <action name="adminHome" class="com.hp.AdminHome">
+            <result name="success">/Admin.jsp</result>
+        </action>
+        <action name="adminDoctor" class="com.hp.AdminDoctor">
+            <result name="success">/Admin.jsp</result>
+        </action>
+        <action name="adminDocData" class="com.hp.AdminDocData">
+            <result name="success">/Admin.jsp</result>
+        </action>
+        <action name="adminUser" class="com.hp.AdminUser">
+            <result name="success">/Admin.jsp</result>
+        </action>
+        <action name="adminUserData" class="com.hp.AdminUserData">
+            <result name="success">/Admin.jsp</result>
+        </action>
+        <action name="registerNew">
+            <result name="success">/RegisterNew.jsp</result>
+        </action>
+        <action name="registerData" class="com.hp.RegisterData">
+            <result name="success">/LoginNew.jsp</result>
+            <result name="error">/RegisterNew.jsp</result>
+            <result name="input">/RegisterNew.jsp</result>
+        </action>
+    </package>
+</struts>
